@@ -108,7 +108,7 @@ function eventHandler() {
 		var checkedColor = $('.modal-order input[name=color]:checked').data('color');
 		var currentImg = $('.modal-order__product-img');
 		setTimeout(function () {
-			currentImg.attr('src', "img/@2x/product-".concat(checkedColor, "--").concat(checkedSize, ".jpg"));
+			currentImg.attr('src', "img/@1x/product-".concat(checkedColor, "--").concat(checkedSize, ".jpg"));
 		}, 200); // console.log(`img/@2x/product-${checkedColor}--${checkedSize}.jpg`);
 	});
 

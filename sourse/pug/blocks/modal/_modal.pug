@@ -57,19 +57,24 @@ mixin modal()
 
 					+e.col.col-md-6
 						+e.info-block
-							+e.info-price 990 руб
-							+e.info-name 15-17 см, фиолетовая фуксия
+							+e.info-price
+								span 990 
+								| руб
+							+e.info-name
+								span.size 15-17 см
+								|, 
+								span.color фиолетовая фуксия
 						form
 							+e.radio-title Размер букета
 							+e.radio-block
 								+e.LABEL.radio-size
-									input(type='radio', name='size' data-size='sm' checked)
+									input(type='radio', name='size' data-size='15-17 см' data-photosize='sm' data-price='990' checked)
 									span Маленький
 								+e.LABEL.radio-size
-									input(type='radio', name='size' data-size='md')
+									input(type='radio', name='size' data-size='19-21 см' data-photosize='md' data-price='1990')
 									span Средний
 								+e.LABEL.radio-size
-									input(type='radio', name='size' data-size='lg')
+									input(type='radio', name='size' data-size='28-30 см' data-photosize='lg' data-price='2990')
 									span Большой
 							
 							+e.radio-title Цвет упаковки

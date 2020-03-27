@@ -121,16 +121,20 @@ function eventHandler() {
 
 	$('.modal-order input[name=size], .modal-order input[name=color]').change(function() {
 
+		let checkedPhotoSize = $('.modal-order input[name=size]:checked').data('photosize');
 		let checkedSize = $('.modal-order input[name=size]:checked').data('size');
 		let checkedColor = $('.modal-order input[name=color]:checked').data('color');
+		let checkedPrice = $('.modal-order input[name=size]:checked').data('price');
 
 		let currentImg = $('.modal-order__product-img')
 
 		setTimeout(function () {
-			currentImg.attr('src', `img/@1x/product-${checkedColor}--${checkedSize}.jpg`);
+			currentImg.attr('src', `img/@1x/product-${checkedColor}--${checkedPhotoSize}.jpg`);
+			$('.modal-order__info-price span').text(checkedPrice);
+			$('.modal-order__info-name .size').text(checkedSize);
 		}, 200);
 
-		// console.log(`img/@2x/product-${checkedColor}--${checkedSize}.jpg`);
+		// console.log(`img/@2x/product-${checkedColor}--${checkedPhotoSize}.jpg`);
 	});
  
 

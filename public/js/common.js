@@ -104,12 +104,16 @@ function eventHandler() {
 		}]
 	}));
 	$('.modal-order input[name=size], .modal-order input[name=color]').change(function () {
+		var checkedPhotoSize = $('.modal-order input[name=size]:checked').data('photosize');
 		var checkedSize = $('.modal-order input[name=size]:checked').data('size');
 		var checkedColor = $('.modal-order input[name=color]:checked').data('color');
+		var checkedPrice = $('.modal-order input[name=size]:checked').data('price');
 		var currentImg = $('.modal-order__product-img');
 		setTimeout(function () {
-			currentImg.attr('src', "img/@1x/product-".concat(checkedColor, "--").concat(checkedSize, ".jpg"));
-		}, 200); // console.log(`img/@2x/product-${checkedColor}--${checkedSize}.jpg`);
+			currentImg.attr('src', "img/@1x/product-".concat(checkedColor, "--").concat(checkedPhotoSize, ".jpg"));
+			$('.modal-order__info-price span').text(checkedPrice);
+			$('.modal-order__info-name .size').text(checkedSize);
+		}, 200); // console.log(`img/@2x/product-${checkedColor}--${checkedPhotoSize}.jpg`);
 	});
 
 	var gets = function () {

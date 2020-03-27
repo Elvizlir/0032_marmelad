@@ -1,0 +1,38 @@
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.row
+				.col-xl-auto.col
+					+e.A.logo-wrap(href='/')
+						img.res-i(src='img/@2x/header-logo.png' alt='#')
+				.col.order-last.order-xl-0
+					+mnu()
+				.col-auto
+					+e.A.basket(href='#')
+						+icon('basket')
+						+e.basket-counter 1
+				.col-auto
+					+e.A.phone(href='tel:89052227212') 8(905) 222-72-12
+					
+	// end top-nav

@@ -1,0 +1,38 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.SECTION.s-advantages.section#s-advantages&attributes(attributes)
+		+e.IMG.abs-bg--top(src='img/@2x/advantages-bg--top.png' alt='')
+		+e.IMG.abs-bg--bottom(src='img/@2x/advantages-bg--bottom.png' alt='')
+		.container
+			+e.IMG.abs-img.res-i(src='img/@2x/advantages-abs.png' alt='#')
+
+			+e.block
+				h2 Зачем Вам сладкий букет?
+				+e.subtitle Такой подарок принесёт только радость и незабываемые впечатления
+
+				.row
+					+e.col.col-lg-3.col-sm-6
+						+e.item
+							+e.item-icon
+								img.res-i(src='img/@2x/advantages-i1.png' alt='')
+							+e.item-title Фотка в Инстаграмм
+							+e.item-descr С таким букетиком, Вы точно соберёте много лайков!
+					+e.col.col-lg-3.col-sm-6
+						+e.item
+							+e.item-icon
+								img.res-i(src='img/@2x/advantages-i2.png' alt='')
+							+e.item-title Хорошее настроение
+							+e.item-descr Наши необычные букеты никого не&nbsp;оставят равнодушными
+					+e.col.col-lg-3.col-sm-6
+						+e.item
+							+e.item-icon
+								img.res-i(src='img/@2x/advantages-i3.png' alt='')
+							+e.item-title Быстрая доставка
+							+e.item-descr Доставим сладкий подарок БЕСПЛАТНО, на следующий день&nbsp;после заказа
+					+e.col.col-lg-3.col-sm-6
+						+e.item
+							+e.item-icon
+								img.res-i(src='img/@2x/advantages-i4.png' alt='')
+							+e.item-title Удобная оплата
+							+e.item-descr Наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты
+	// end s-advantages

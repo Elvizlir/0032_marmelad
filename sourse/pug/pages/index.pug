@@ -1,0 +1,23 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-choose/_s-choose.pug
+
+block variables
+	- let  mainPage= 'main-page'
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+	+header()
+		+e.IMG.img-bg--top(src='img/@2x/header-bg--top.png' alt='')
+		+top-nav()
+		+header-block()
+	+s-advantages()
+	+s-choose()
+	//- +s-form()
+	+s-contact()
+	+footer()

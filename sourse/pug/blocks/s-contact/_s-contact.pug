@@ -1,0 +1,39 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		+e.IMG.abs-bg--top(src='img/@2x/contact-bg--top.png' alt='')
+		+e.IMG.abs-bg--bottom(src='img/@2x/contact-bg--bottom.png' alt='')
+		.container
+			+e.row.row
+				.col-lg-6.order-lg-last
+					h2 Сладкие букеты оптом
+					+e.subtitle Закажите неповторимые сладкие букеты на корпоратив для своих коллег или на любой долгожданный праздник
+					+e.add P.S. На опт действует специальное предложение !
+
+					+form-wrap
+						+e.block
+							+e.title Желаете приобрести букеты оптом?
+							+e.subtitle Оставьте Нам свои данные, а мы свяжемся с Вами!
+
+							+input('Ваше имя *', 'text', '', 'name')
+							+input('Ваш телефон *', 'tel', '', 'phone')
+
+							+e.btn.btn.btn-light(type="submit") Отправить
+						+polite()
+				.col-lg-6
+					h3 Наши контакты
+
+					+e.item
+						+e.item-title Адрес
+						+e.item-descr Санкт-Петербург, Невский проспект д. 83
+					+e.item
+						+e.item-title Телефон
+						+e.A.item-descr(href='tel:89052227212') 8(905) 222-72-12
+					+e.item
+						+e.item-title Электронная почта
+						+e.A.item-descr(href='mailto:Tanja.fila@gmail.com') Tanja.fila@gmail.com
+					+e.item
+						+e.item-title Instagram
+						+e.A.item-descr(href='https://www.instagram.com/marmelad_stories/') @marmelad_stories
+							+icon('inst')
+	// end s-contact

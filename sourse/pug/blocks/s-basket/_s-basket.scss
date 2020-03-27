@@ -1,0 +1,160 @@
+
+// start .s-basket
+.s-basket {
+	position: relative;
+	padding: 0 0 rem(100);
+
+	&__abs-bg{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+
+	}
+
+	&__main-row{
+		@include roww(40)
+	}
+
+	&__wrapper{
+		max-width: rem(1200);
+		margin-left: auto;
+	}
+
+	&__in-row{
+		align-items: center;
+	}
+
+	&__block{
+		@include media-breakpoint-up(lg){
+			max-width: rem(461);
+		}
+		box-shadow: -10px -10px 20px rgba(229, 220, 164, 0.69), 10px 10px 20px rgba(254, 242, 178, 0.7);
+		border-radius: 20px;
+		padding: rem(20) rem(30);
+	}
+
+
+	&__title{
+		@include rfs(58);
+		line-height: 1;
+		margin-bottom: rem(47);
+		margin-top: rem(20);
+	}
+
+	.form-wrap{
+
+		.custom-input{
+			margin: 0;
+
+			&__text{
+				color: rgba(0, 0, 0, 0.7);
+				font-size: rem(12);
+			}
+		}
+
+		&__in-row{
+			align-items: center;
+		}
+
+		&__form-col{
+			margin-bottom: rem(41);
+		}
+
+		&__input-wrap{
+			margin: 0;
+		}
+
+		&__input{
+			font-size: rem(18);
+			letter-spacing: 1.8px;
+			&::placeholder{
+				font-size: rem(18);
+				letter-spacing: 1.8px;
+				color: rgba(0, 0, 0, 0.5);
+				@extend .mono;
+			}
+		}
+
+		&__input-title{
+			@extend .mono;
+			letter-spacing: 1.8px;
+		}
+
+		&__btn{
+			@extend .mono;
+			color: #000;
+			width: rem(231);
+			padding: rem(10) rem(5);
+			letter-spacing: 2px;
+			box-shadow: -4px 4px 4px #C0BABA;
+		}
+	}
+
+	&__block-title{
+		@include rfs(50);
+		line-height: 1;
+		margin-bottom: rem(40);
+		@extend .mono;
+		text-align: center;
+	}
+
+	&__block-row{
+		margin-bottom: rem(30);
+	}
+
+	&__col-title{
+		margin-bottom: rem(5);
+		@extend .mono;
+		letter-spacing: 2.4px;
+		@include rfs(24);
+		line-height: 1;
+
+		&--sm{
+			color: rgba(0, 0, 0, 0.7);
+			font-size: rem(12) !important;
+			font-family: $default-font;
+			letter-spacing: normal;
+		}
+	}
+
+	&__line{
+		border-bottom: 1px solid #cbc28c;
+	}
+
+	&__final-price{
+		margin-top: rem(60);
+		@extend .mono;
+		letter-spacing: 2.4px;
+		@include rfs(24);
+		text-align: center;
+	}
+
+
+		
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-basket

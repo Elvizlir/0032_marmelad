@@ -1,0 +1,19 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container
+			+e.IMG.img.res-i(src='img/@2x/header-img.png' alt='')
+			+e.block
+				h1 Мармеладные букеты
+				+e.subtitle Вкусный подарок для человека, который Вам дорог
+
+				+e.btn.btn.btn-primary(href='#') Выбрать букет
+
+				+e.soc-block
+					+e.soc-info Подпишись на нас в социальных сетях:
+
+					+e.A.soc-icon(href='#')
+						+icon('inst')
+
+
+	// end header-block

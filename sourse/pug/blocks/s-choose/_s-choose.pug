@@ -1,0 +1,19 @@
+mixin s-choose()
+	// start s-choose
+	+b.SECTION.s-choose.section#s-choose&attributes(attributes)
+
+		+e.block
+			.container
+				+e.title-block
+					h2 Выбери свой вкусный букет
+					+e.subtitle На выбор 3 варианта размера букета, 8 вариантов яркой упаковки и незабываемые эмоции
+
+				+e.catalog-block
+
+					+e.catalog-descr
+						+e.descr-title Нажмите и выберите сладкий&nbsp;подарок
+						+e.descr-info Мы не делаем букеты “под копирку”, каждый из них имеет свою индивидуальность. Все сладкие подарки разные внутри
+
+					+e.A.catalog-photo(href='#')
+						img.res-i(src='img/@2x/choose-img.png' alt='')
+	// end s-choose

@@ -1,0 +1,47 @@
+mixin s-basket()
+	// start s-basket
+	+b.SECTION.s-basket.section#s-basket&attributes(attributes)
+		.container
+			+e.wrapper
+				+e.main-row.row
+					.col-lg-6.order-lg-last
+						+e.block
+							+e.block-title Ваш заказ
+							+e.block-row.row
+								.col
+									+e.col-title букет
+									+e.col-title--sm Маленький (25 см), обёртка фиолетовая
+
+								.col-auto
+									+e.col-title 990 руб
+							+e.block-row.row
+								.col
+									+e.col-title Доставка
+
+								.col-auto
+									+e.col-title Бесплатно
+							+e.line
+
+							+e.final-price Итого: 
+								span 990 руб
+					.col-lg-6
+						+e.H1.title Оформление заказа
+						+form-wrap
+							+e.in-row.row
+								+e.form-col.col-4
+									+e.input-title Имя
+								+e.form-col.col-8
+									+input('Иванов Иван Иванович', 'text', '', 'name')
+								+e.form-col.col-4
+									+e.input-title Номер телефона
+								+e.form-col.col-8
+									+input('8(911) 200-20-20', 'tel', '', 'phone')
+								+e.form-col.col-4
+									+e.input-title Оплата
+								+e.form-col.col-8
+									+in-c('checkbox', 'Наличными курьеру', '')(checked)
+							+e.btn.btn.btn-light2(type='submit') Заказать
+					
+
+			
+	// end s-basket

@@ -1,0 +1,12 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy
+		.container
+			.row
+				.col-md-auto.col
+					+e.A.logo(href='/')
+						img.res-i(src='img/@2x/header-logo.png' alt='')
+				+e.addres-col.col-md-auto.order-last.order-md-0
+					+e.info ИП ФЁДОРОВ
+					+e.info Ул. Кнепович д. 9
+				.col-auto
+					+e.A.phone(href='tel:89052227212') 8(905) 222-72-12

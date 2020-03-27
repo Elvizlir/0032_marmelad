@@ -1,0 +1,20 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-basket/_s-basket.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+	+header()
+		+e.IMG.img-bg--top(src='img/@2x/header-bg--top.png' alt='')
+		+e.IMG.img-bg--bottom(src='img/@2x/basket-bg--bottom.png' alt='')
+		+top-nav()
+		+s-basket()
+	+footer()

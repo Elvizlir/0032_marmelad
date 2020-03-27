@@ -1,0 +1,136 @@
+
+// start .s-choose
+.s-choose {
+	position: relative;
+	background-color: #F0C5C7;
+
+	&__block{
+		margin-top: -12%;
+	}
+
+	&__title-block{
+		max-width: rem(1000);
+		margin-left: auto;
+	}
+	
+	&__catalog-block{
+		max-width: rem(1120);
+		margin-left: auto;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	&__subtitle{
+		text-align: center;
+		max-width: rem(450);
+		margin: 0 auto;
+		line-height: 1.3;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(md){
+			margin-bottom: rem(63);
+		}
+	}
+
+	&__catalog-block{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@include media-breakpoint-up(sm){
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+		align-items: flex-end;
+		@include media-breakpoint-up(md){
+			align-items: flex-start;
+		}
+	}
+	
+	&__catalog-descr{
+		order: 2;
+		@include media-breakpoint-up(sm){
+			margin-right: rem(30);
+			order: unset;
+		}
+		max-width: rem(400);
+		@include media-breakpoint-up(md){
+			margin-top: rem(75);
+			margin-right: rem(79);
+		}
+		text-align: center;
+
+		position: relative;
+		&::after{
+			display: none;
+			@include media-breakpoint-up(sm){
+				display: block;
+				content: '';
+				width: rem(175);
+				height: rem(111);
+				position: absolute;
+				bottom: 120%;
+				right: rem(-20);
+				transform: scale(1, -1);
+				background-image: url(../img/@2x/choose-arrow.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			@include media-breakpoint-up(md){
+				transform: unset;
+				top: 120%;
+				right: rem(-20);
+			}
+	
+		}
+	}
+
+	&__descr-title{
+		@extend .mono;
+		@include rfs(32);
+		margin-bottom: rem(10);
+		line-height: 1;
+	}
+
+	&__descr-info{
+		font-size: rem(16);
+		@include media-breakpoint-up(sm){
+			font-size: rem(18);
+		}
+		line-height: 1.3;
+	}
+
+	&__catalog-photo{
+		display: inline-block;
+		margin: 0 auto;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(sm){
+			margin: 0;
+		}
+	}
+		
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+
+//
+@include media-breakpoint-between(md, xl) { }
+
+
+//
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
+
+//
+@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {} 
+
+} // end.s-choose

@@ -43,7 +43,7 @@ mixin modal()
 			+e.INPUT.btn(type="submit" value="Рассчитать") 
 			+polite()
 	
-	
+
 	.d-none
 		+b.modal-order#modal-order.modal-win
 			+e.H2.title Выбери свой вкусный букет
@@ -105,5 +105,13 @@ mixin modal()
 									span
 							
 							+e.btn.btn.btn-light2(type="submit") Добавить в корзину
+	
+	
+	.d-none
+		+b.modal-thanks#modal-thanks.modal-win
+			+e.H3.title Товар добавлен в корзину
+			+e.btn-block
+				+e.btn.btn.btn-light2(href='#') Оформить заказ
+				+e.btn.btn.btn-light2(href='#') Продолжить покупки
 		// #modal-call
 	// modal

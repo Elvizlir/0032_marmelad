@@ -1,13 +1,18 @@
 .modal-win {
+	background-color: $warning;
+	border-radius: rem(20);
+	@include media-breakpoint-down(sm){
+		padding: rem(10);
+	}
 	// display: block;
 	width: 100%;
 	position: relative;
-
+	
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
 	}
-
+	
 	.mfp-close {
 		color: $primary;
 		font-size: 40px;
@@ -20,13 +25,37 @@
 	padding-right: rem(15);
 }
 
-.modal-order{
-	background-color: $warning;
-	max-width: rem(1000);
-	border-radius: rem(20);
-	@include media-breakpoint-down(sm){
-		padding: rem(10);
+.modal-thanks{
+	max-width: rem(500);
+	@extend .mono;
+	
+	&__title{
+		margin-bottom: rem(20);
+		letter-spacing: 2.4px;
+		text-align: center;
 	}
+	
+	&__btn-block{
+		@include media-breakpoint-down(sm){
+			flex-direction: column;
+		}
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	&__btn{
+		@include media-breakpoint-down(sm){
+			margin-bottom: rem(20);
+		}
+		margin-left: auto;
+		margin-right: auto;
+		letter-spacing: 1.8px;
+		max-width: rem(200);
+	}
+}
+
+.modal-order{
+	max-width: rem(1000);
 	
 	&__title{
 		margin-bottom: rem(35);

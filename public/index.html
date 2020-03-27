@@ -64,7 +64,7 @@
 						<div class="header-block__block">
 							<h1>Мармеладные букеты</h1>
 							<div class="header-block__subtitle">Вкусный подарок для человека, который Вам дорог
-							</div><a class="header-block__btn btn btn-primary" href="#">Выбрать букет</a>
+							</div><a class="header-block__btn btn btn-primary link-modal" href="#modal-order">Выбрать букет</a>
 							<div class="header-block__soc-block">
 								<div class="header-block__soc-info">Подпишись на нас в социальных сетях:
 								</div><a class="header-block__soc-icon" href="#">
@@ -257,6 +257,73 @@
 					<div class="form-wrap__polite">Нажимая кнопку, вы соглашаетесь на обработку личных данных
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="d-none">
+			<div class="modal-order modal-win" id="modal-order">
+				<h2 class="modal-order__title">Выбери свой вкусный букет
+				</h2>
+				<div class="modal-order__block">
+					<div class="row">
+						<div class="modal-order__col col-md-6">
+							<div class="modal-order__img-wrap"><img name="product_img" src="img/@2x/modal-photo.jpg" alt=""/>
+							</div>
+						</div>
+						<div class="modal-order__col col-md-6">
+							<div class="modal-order__info-block">
+								<div class="modal-order__info-price">990 руб
+								</div>
+								<div class="modal-order__info-name">15-17 см, фиолетовая фуксия
+								</div>
+							</div>
+							<form>
+								<div class="modal-order__radio-title">Размер букета
+								</div>
+								<div class="modal-order__radio-block">
+									<label class="modal-order__radio-size">
+										<input type="radio" name="size" checked="checked"/><span>Маленький</span>
+									</label>
+									<label class="modal-order__radio-size">
+										<input type="radio" name="size"/><span>Средний</span>
+									</label>
+									<label class="modal-order__radio-size">
+										<input type="radio" name="size"/><span>Большой</span>
+									</label>
+								</div>
+								<div class="modal-order__radio-title">Цвет упаковки
+								</div>
+								<div class="modal-order__radio-block">
+									<label class="modal-order__radio-color modal-order__radio-color--green">
+										<input type="radio" name="color" checked="checked"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--red">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--pink">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--blue">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--gray">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--yell">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--purp">
+										<input type="radio" name="color"/><span></span>
+									</label>
+									<label class="modal-order__radio-color modal-order__radio-color--orng">
+										<input type="radio" name="color"/><span></span>
+									</label>
+								</div>
+								<button class="modal-order__btn btn btn-light2" type="submit">Добавить в корзину
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- #modal-call-->
 		</div>

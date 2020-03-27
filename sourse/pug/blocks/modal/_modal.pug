@@ -42,5 +42,63 @@ mixin modal()
 			//- +text( "Комментарий")
 			+e.INPUT.btn(type="submit" value="Рассчитать") 
 			+polite()
+	
+	
+	.d-none
+		+b.modal-order#modal-order.modal-win
+			+e.H2.title Выбери свой вкусный букет
+
+			+e.block
+
+				.row
+					+e.col.col-md-6
+						+e.img-wrap
+							img(name='product_img' src='img/@2x/modal-photo.jpg' alt='')
+
+					+e.col.col-md-6
+						+e.info-block
+							+e.info-price 990 руб
+							+e.info-name 15-17 см, фиолетовая фуксия
+						form
+							+e.radio-title Размер букета
+							+e.radio-block
+								+e.LABEL.radio-size
+									input(type='radio', name='size' checked)
+									span Маленький
+								+e.LABEL.radio-size
+									input(type='radio', name='size')
+									span Средний
+								+e.LABEL.radio-size
+									input(type='radio', name='size')
+									span Большой
+							
+							+e.radio-title Цвет упаковки
+							+e.radio-block
+								+e.LABEL.radio-color--green
+									input(type='radio', name='color' checked)
+									span
+								+e.LABEL.radio-color--red
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--pink
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--blue
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--gray
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--yell
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--purp
+									input(type='radio', name='color')
+									span
+								+e.LABEL.radio-color--orng
+									input(type='radio', name='color')
+									span
+							
+							+e.btn.btn.btn-light2(type="submit") Добавить в корзину
 		// #modal-call
 	// modal

@@ -53,7 +53,7 @@ mixin modal()
 				.row
 					+e.col.col-md-6
 						+e.img-wrap
-							img(name='product_img' src='img/@2x/modal-photo.jpg' alt='')
+							+e.IMG.product-img(name='product_img' src='img/@2x/product-green--sm.jpg' alt='')
 
 					+e.col.col-md-6
 						+e.info-block
@@ -63,40 +63,40 @@ mixin modal()
 							+e.radio-title Размер букета
 							+e.radio-block
 								+e.LABEL.radio-size
-									input(type='radio', name='size' checked)
+									input(type='radio', name='size' data-size='sm' checked)
 									span Маленький
 								+e.LABEL.radio-size
-									input(type='radio', name='size')
+									input(type='radio', name='size' data-size='md')
 									span Средний
 								+e.LABEL.radio-size
-									input(type='radio', name='size')
+									input(type='radio', name='size' data-size='lg')
 									span Большой
 							
 							+e.radio-title Цвет упаковки
 							+e.radio-block
 								+e.LABEL.radio-color--green
-									input(type='radio', name='color' checked)
+									input(type='radio', name='color' data-color='green' checked)
 									span
 								+e.LABEL.radio-color--red
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='red')
 									span
 								+e.LABEL.radio-color--pink
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='pink')
 									span
 								+e.LABEL.radio-color--blue
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='blue')
 									span
-								+e.LABEL.radio-color--gray
-									input(type='radio', name='color')
+								+e.LABEL.radio-color--viol
+									input(type='radio', name='color' data-color='viol')
 									span
 								+e.LABEL.radio-color--yell
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='yell')
 									span
 								+e.LABEL.radio-color--purp
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='purp')
 									span
 								+e.LABEL.radio-color--orng
-									input(type='radio', name='color')
+									input(type='radio', name='color' data-color='orng')
 									span
 							
 							+e.btn.btn.btn-light2(type="submit") Добавить в корзину

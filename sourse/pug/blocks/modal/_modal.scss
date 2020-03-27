@@ -56,6 +56,7 @@
 		overflow: hidden;
 
 		img{
+			@include mt;
 			@include a-cent;
 			width: 100%;
 			height: 100%;
@@ -130,7 +131,7 @@
 	}
 
 	&__radio-color{
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(xs){
 			flex: 0 0 25%;
 			max-width: 25%;
 		}
@@ -176,7 +177,7 @@
 				background-color: #264588;
 			}
 		}
-		&--gray{
+		&--viol{
 			span{
 				background-color: #A190B5;
 			}

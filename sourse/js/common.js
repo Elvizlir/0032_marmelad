@@ -24,54 +24,7 @@ const JSCCommon = {
 		})
 	},
 
-	// toggleMenu() {
-	// 	let  _this = this;
-	// 	_this.btnToggleMenuMobile.forEach(function (element) {
-	// 		element.addEventListener('click', function() {
 
-	// 			_this.btnToggleMenuMobile.forEach(function (element) {
-	// 				element.classList.toggle("on");
-	// 			});
-	// 			_this.menuMobile.classList.toggle("active");
-	// 			_this.body.classList.toggle("fixed");
-				
-	// 			return false;
-	// 		});
-	// 	});
-	// },
-
-	// closeMenu() {
-	// 	let  _this = this;
-	// 	_this.btnToggleMenuMobile.forEach(function (element) {
-	// 		element.classList.remove("on");
-			
-	// 	});
-	// 	_this.menuMobile.classList.remove("active");
-	// 	_this.body.classList.remove("fixed");
-		
-	// },
-
-	// mobileMenu() {
-	// 	// закрыть/открыть мобильное меню
-	// 	let  _this = this;
-
-	// 	_this.toggleMenu();
-	// 	_this.menuMobileLink.forEach(function (element)  {
-	// 		element.addEventListener('click',  function (e) {
-	// 			console.log(element);
-	// 			_this.closeMenu(); 
-				
-	// 		});
-	// 	})
-	// 	document.addEventListener('mouseup', function (event)   {
-	// 		let container = event.target.closest(".menu-mobile--js.active"); // (1)
-	// 		if (!container) {
-	// 			_this.closeMenu(); 
-				
-	// 		}
-	// 	});
-	// },
-	// /mobileMenu
 
 	// табы  . 
 	tabscostume(tab) {
@@ -112,51 +65,6 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/main.jpg);"></div>')
 	// /добавляет подложку для pixel perfect
-
-
-
-	// const url = document.location.href;
-	// $.each($(".top-nav__nav a "), function() {
-
-	// 	if (this.href == url) {
-	// 		if ($(this).hasClass("top-nav__link") == true) {
-
-	// 			$(this).addClass('top-nav__link-active');
-	// 		}
-	// 		if ($(this).hasClass("footer__link") == true) {
-
-	// 			$(this).addClass('footer__link-active');
-	// 		} 
-	// 	}; 
-	// }); 
-
-	// /закрыть/открыть мобильное меню
-
-	// function heightses() {
-
-	// 	const w = $(window).width();
-
-	// 	const topH = $("header ").innerHeight();
-
-	// 	$(window).scroll(function() {
-	// 		if ($(window).scrollTop() > topH) {
-	// 			$('.top-nav  ').addClass('fixed');
-	// 		} else {
-	// 			$('.top-nav  ').removeClass('fixed');
-	// 		}
-	// 	});
-	// 	// конец добавил
-	// 	if (window.matchMedia("(min-width: 992px)").matches) {
-	// 		JSCCommon.closeMenu();
-	// 	}
-	// }
-
-	// $(window).resize(function() {
-	// 	heightses();
-
-	// });
-
-	// heightses();
 
 	// листалка по стр
 	$(" .top-nav li a, .scroll-link").click(function() {
@@ -209,6 +117,20 @@ function eventHandler() {
 
 		}],
 
+	});
+
+	$('.modal-order input[name=size], .modal-order input[name=color]').change(function() {
+
+		let checkedSize = $('.modal-order input[name=size]:checked').data('size');
+		let checkedColor = $('.modal-order input[name=color]:checked').data('color');
+
+		let currentImg = $('.modal-order__product-img')
+
+		setTimeout(function () {
+			currentImg.attr('src', `img/@2x/product-${checkedColor}--${checkedSize}.jpg`);
+		}, 200);
+
+		// console.log(`img/@2x/product-${checkedColor}--${checkedSize}.jpg`);
 	});
  
 

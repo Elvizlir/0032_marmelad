@@ -4,6 +4,15 @@
 	position: relative;
 	background-color: #F0C5C7;
 
+	&__circles{
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+		@include a-cent;
+		max-width: unset;
+		width: 105%;
+	}
+
 	&__block{
 		margin-top: -12%;
 	}

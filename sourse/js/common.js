@@ -129,7 +129,7 @@ function eventHandler() {
 		let currentImg = $('.modal-order__product-img')
 
 		setTimeout(function () {
-			currentImg.attr('src', `img/@1x/product-${checkedColor}--${checkedPhotoSize}.jpg`);
+			currentImg.attr('src', `img/product-gal/product-${checkedColor}--${checkedPhotoSize}.jpg`);
 			$('.modal-order__info-price span').text(checkedPrice);
 			$('.modal-order__info-name .size').text(checkedSize);
 		}, 200);

@@ -106,12 +106,17 @@
 		width: rem(20px);
 		height: rem(20px);
 		border: 1px solid $light;
-		background-color: transparent;
+		background-color: $light;
 		@include mt;
 		position: absolute; 
 		margin-right: 10px;
 		&::after{  
+			@include mt;
 			content: '';
+			width: rem(9);
+			height: rem(9);
+			border-radius: 50%;
+			background-color: #000;
 			position: absolute;
 			@include a-cent; 
 			opacity: 0;

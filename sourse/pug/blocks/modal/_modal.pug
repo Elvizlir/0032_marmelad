@@ -53,7 +53,7 @@ mixin modal()
 				.row
 					+e.col.col-md-6
 						+e.img-wrap
-							+e.IMG.product-img(name='product_img' src='img/@1x/product-green--sm.jpg' alt='')
+							+e.IMG.product-img(name='product_img' src='img/product-gal/product-green--sm.jpg' alt='')
 
 					+e.col.col-md-6
 						+e.info-block
@@ -113,5 +113,59 @@ mixin modal()
 			+e.btn-block
 				+e.btn.btn.btn-light2(href='#') Оформить заказ
 				+e.btn.btn.btn-light2(href='#') Продолжить покупки
+	
+	
+	.d-none
+		+b.modal-deliver#modal-deliver.modal-win
+			+e.H2.title Куда доставить?
+			.tabs
+				.tabs__caption
+					.tabs__btn.active Доставка
+					.tabs__btn Самовывоз
+
+				.tabs__wrap
+					.tabs__content.active 
+						+form-wrap
+							.row
+								+e.col.col-sm-9.col-8
+									+input('Улица', 'text', '', '')
+								+e.col.col-sm-3.col-4
+									+input('Дом', 'text', '', '')
+								+e.col.col-sm-3.col-6
+									+input('Квартира', 'text', '', '')
+								+e.col.col-sm-3.col-6
+									+input('Подъезд', 'text', '', '')
+								+e.col.col-sm-3.col-6
+									+input('Код двери', 'text', '', '')
+								+e.col.col-sm-3.col-6
+									+input('Этаж', 'text', '', '')
+								+e.col.col-12
+									+input('Комментарий к адресу', 'textarea', '', '')
+							
+							+e.btn.btn.btn-light2(type="submit") Подтвердить адрес
+					.tabs__content
+						+e.deliver-wrap
+							+form-wrap
+
+								+in-c('radio', '', 'deliver')(checked)
+									+e.SPAN.address-title Мармеладная бочка
+									+e.SPAN.address-info Невский проспект дом 83
+									+e.SPAN.address-info--metro Невский проспект
+									+e.SPAN.address-info Работаем без выходных, круглосуточно
+								+in-c('radio', '', 'deliver')
+									+e.SPAN.address-title Мармеладная бочка
+									+e.SPAN.address-info Невский проспект дом 83
+									+e.SPAN.address-info--metro Невский проспект
+									+e.SPAN.address-info Работаем без выходных, круглосуточно
+								+in-c('radio', '', 'deliver')
+									+e.SPAN.address-title Мармеладная бочка
+									+e.SPAN.address-info Невский проспект дом 83
+									+e.SPAN.address-info--metro Невский проспект
+									+e.SPAN.address-info Работаем без выходных, круглосуточно
+						
+								+e.btn.btn.btn-light2(type="submit") Продолжить
+
+									
+
 		// #modal-call
 	// modal

@@ -195,7 +195,7 @@
 				<div class="modal-order__block">
 					<div class="row">
 						<div class="modal-order__col col-md-6">
-							<div class="modal-order__img-wrap"><img class="modal-order__product-img" name="product_img" src="img/@1x/product-green--sm.jpg" alt="" role="presentation"/>
+							<div class="modal-order__img-wrap"><img class="modal-order__product-img" name="product_img" src="img/product-gal/product-green--sm.jpg" alt="" role="presentation"/>
 							</div>
 						</div>
 						<div class="modal-order__col col-md-6">
@@ -260,6 +260,93 @@
 				<h3 class="modal-thanks__title">Товар добавлен в корзину
 				</h3>
 				<div class="modal-thanks__btn-block"><a class="modal-thanks__btn btn btn-light2" href="#">Оформить заказ</a><a class="modal-thanks__btn btn btn-light2" href="#">Продолжить покупки</a>
+				</div>
+			</div>
+		</div>
+		<div class="d-none">
+			<div class="modal-deliver modal-win" id="modal-deliver">
+				<h2 class="modal-deliver__title">Куда доставить?
+				</h2>
+				<div class="tabs">
+					<div class="tabs__caption">
+						<div class="tabs__btn active">Доставка</div>
+						<div class="tabs__btn">Самовывоз</div>
+					</div>
+					<div class="tabs__wrap">
+						<div class="tabs__content active"> 
+							<div class="form-wrap">
+								<form>
+									<input type="hidden" name="example-input-field"/>
+									<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+									<input class="utm_source" type="hidden" name="utm_source"/>
+									<input class="utm_term" type="hidden" name="utm_term"/>
+									<input class="utm_medium" type="hidden" name="utm_medium"/>
+									<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+									<div class="row">
+										<div class="form-wrap__col col-sm-9 col-8">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Улица" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-sm-3 col-4">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Дом" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-sm-3 col-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Квартира" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-sm-3 col-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Подъезд" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-sm-3 col-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Код двери" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-sm-3 col-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Этаж" name=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__col col-12">
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" placeholder="Комментарий к адресу" name=""></textarea>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+									</div>
+									<button class="form-wrap__btn btn btn-light2" type="submit">Подтвердить адрес
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="modal-deliver__deliver-wrap">
+								<div class="form-wrap">
+									<form>
+										<input type="hidden" name="example-input-field"/>
+										<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+										<input class="utm_source" type="hidden" name="utm_source"/>
+										<input class="utm_term" type="hidden" name="utm_term"/>
+										<input class="utm_medium" type="hidden" name="utm_medium"/>
+										<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+										<label class="custom-input"><input class="custom-input__input" type="radio" name="deliver" checked="checked"/><span class="custom-input__lab"></span><span class="custom-input__address-title">Мармеладная бочка</span><span class="custom-input__address-info">Невский проспект дом 83</span><span class="custom-input__address-info custom-input__address-info--metro">Невский проспект</span><span class="custom-input__address-info">Работаем без выходных, круглосуточно</span>
+										</label>
+										<label class="custom-input"><input class="custom-input__input" type="radio" name="deliver"/><span class="custom-input__lab"></span><span class="custom-input__address-title">Мармеладная бочка</span><span class="custom-input__address-info">Невский проспект дом 83</span><span class="custom-input__address-info custom-input__address-info--metro">Невский проспект</span><span class="custom-input__address-info">Работаем без выходных, круглосуточно</span>
+										</label>
+										<label class="custom-input"><input class="custom-input__input" type="radio" name="deliver"/><span class="custom-input__lab"></span><span class="custom-input__address-title">Мармеладная бочка</span><span class="custom-input__address-info">Невский проспект дом 83</span><span class="custom-input__address-info custom-input__address-info--metro">Невский проспект</span><span class="custom-input__address-info">Работаем без выходных, круглосуточно</span>
+										</label>
+										<button class="form-wrap__btn btn btn-light2" type="submit">Продолжить
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- #modal-call-->

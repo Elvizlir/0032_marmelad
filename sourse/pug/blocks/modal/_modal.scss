@@ -286,6 +286,15 @@
 
 			.custom-input{
 
+				&__lab{
+					&::after{
+						width: rem(9);
+						height: rem(9);
+						border-radius: 50%;
+						background-color: #000;
+					}
+				}
+
 				&__address-title{
 					line-height: 1.2;
 					margin-bottom: rem(5);

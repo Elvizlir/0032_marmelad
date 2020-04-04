@@ -113,10 +113,6 @@
 		&::after{  
 			@include mt;
 			content: '';
-			width: rem(9);
-			height: rem(9);
-			border-radius: 50%;
-			background-color: #000;
 			position: absolute;
 			@include a-cent; 
 			opacity: 0;
